@@ -1,16 +1,13 @@
 class Nos < Formula
   desc "Manage your dotfiles and their dependencies automagically"
   homepage "https://github.com/pablopunk/nos"
-  url "https://github.com/pablopunk/nos/archive/refs/tags/0.0.2.tar.gz"
-  sha256 "75e0fa855384690bfadb134e1fda7a5cb2a8cb9272d1f0a784f7b174efefa871"
+  url "https://github.com/pablopunk/nos/archive/refs/tags/0.0.3.tar.gz"
+  sha256 "d9fc1b80ddaf05fcaa0c6c9c475088cff8ec759bccfaf37437c7de707b23fca5"
   license "MIT"
 
   depends_on "lua"
-  depends_on "luarocks"
 
   def install
-    ENV["LUA_PATH"] = "#{buildpath}/?.lua;;"
-    system "luarocks", "install", "--local", "luafilesystem"
     bin.install "nos.lua" => "nos"
   end
 
