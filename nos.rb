@@ -9,7 +9,8 @@ class Nos < Formula
   depends_on "luarocks"
 
   def install
-    system "luarocks", "install", "luafilesystem"
+    ENV["LUA_PATH"] = "#{buildpath}/?.lua;;"
+    system "luarocks", "install", "--local", "luafilesystem"
     bin.install "nos.lua" => "nos"
   end
 
