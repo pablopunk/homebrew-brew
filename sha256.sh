@@ -1,18 +1,20 @@
 package=$1
 version=$2
 
-if [ -z "$version" ]; then
-    echo "Usage: $0 <package> <version>"
+if [ -z "$package" ]; then
+    echo "Usage: $0 <package>"
     exit 1
 fi
 
-if [ "$package" == "swifthi-shift" ]; then
-    curl -sL -o SwiftShift.zip https://github.com/pablopunk/$package/releases/download/$version/$package.zip
-    sha256sum SwiftShift.zip
-    rm SwiftShift.zip
+if [ "$package" == "swift-shift" ]; then
+    url=$(sed -n '/url/p' Casks/$package.rb | cut -d '"' -f2)
+    curl -sL -o $package.zip $url
+    sha256sum $package.zip
+    rm $package.zip
     exit 0
 else
-    curl -sL -o $package-$version.tar.gz https://github.com/pablopunk/$package/archive/refs/tags/$version.tar.gz
-    sha256sum $package-$version.tar.gz
-    rm $package-$version.tar.gz
+    url=$(sed -n '/url/p' $package.rb | cut -d '"' -f2)
+    curl -sL -o $package.tar.gz $url
+    sha256sum $package.tar.gz
+    rm $package.tar.gz
 fi
