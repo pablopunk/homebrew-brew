@@ -1,6 +1,6 @@
 class Nos < Formula
   version "0.0.8"
-  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+  sha256 "3899787657baa807808b09dec67ae240ad4ecc71e21880fbcf3c40a3ae9afa25"
 
   desc "Manage your dotfiles and their dependencies automagically"
   homepage "https://github.com/pablopunk/nos"
