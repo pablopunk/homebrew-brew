@@ -1,8 +1,8 @@
 class Nos < Formula
   desc "Manage your dotfiles and their dependencies automagically"
   homepage "https://github.com/pablopunk/nos"
-  url "https://github.com/pablopunk/nos/archive/refs/tags/0.0.4.tar.gz"
-  sha256 "f9e071224a0d0c9acd19758deacc6a46279465a3933e0ed2c205ec385e2ae384"
+  url "https://github.com/pablopunk/nos/archive/refs/tags/0.0.5.tar.gz"
+  sha256 "87f5ce9361f8ef1263521ff9b12ca39df00f32a1486753220e55278a11bc3129"
   license "MIT"
 
   depends_on "lua"
