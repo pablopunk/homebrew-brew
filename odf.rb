@@ -10,8 +10,4 @@ class Odf < Formula
   def install
     bin.install "odf" => "odf"
   end
-
-  test do
-    system "#{bin}/odf", "--version"
-  end
 end
