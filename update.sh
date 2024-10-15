@@ -32,7 +32,7 @@ echo "Updating $path to $latest_version"
 sed -i '' "s/sha256 \".*\"/sha256 \"$sha\"/g" $path
 sed -i '' "s/version \".*\"/version \"$latest_version\"/g" $path
 
-if [[ "$?" != "0" ]]; then
+if [ "$?" != "0" ]; then
   echo "Failed to update $path"
 else
   echo "Successfully updated $path"
