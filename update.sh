@@ -36,6 +36,6 @@ if [ "$?" != "0" ]; then
   echo "Failed to update $path"
 else
   echo "Successfully updated $path"
-  package=$(echo $path | cut -d "." -f1)
+  package=$(echo $path | cut -d "." -f1 | cut -d "/" -f2)
   git commit -am "$package@$latest_version" && git push
 fi
