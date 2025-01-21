@@ -1,6 +1,6 @@
 class Odf < Formula
-  version "2.3.4"
-  sha256 "d6fc4b142d7e5103a0791a17fab964b03f5fe97eb7fec892028570c34db34c36"
+  version "3.0.0"
+  sha256 "363b68c40d6a7e9e000a3f514e328bc730cc42f75942db38420efdb03388ac5e"
 
   desc "Open Diff Files. Open git-modified files in your favorite editor."
   homepage "https://github.com/pablopunk/odf"
