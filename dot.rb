@@ -1,6 +1,6 @@
 class Dot < Formula
-  version "0.7.0"
-  sha256 "26ba9a217afcfc75f2652b8db295f268364f9be994533537d715fed3af152773"
+  version "1.1.0"
+  sha256 "3485aa11915e2461d23f622faddbaeeda257d3e0f3581b8f330e977229fcebfb"
 
   desc "Manage your dotfiles and their dependencies automagically"
   homepage "https://github.com/pablopunk/dot"
