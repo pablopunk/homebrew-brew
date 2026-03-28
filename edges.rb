@@ -2,16 +2,16 @@ class Edges < Formula
   desc "A lightweight window border tool for macOS"
   homepage "https://github.com/pablopunk/edges"
   license "MIT"
-  version "2026.03.28.3"
+  version "2026.03.28.4"
 
   on_arm do
-    url "https://github.com/pablopunk/edges/releases/download/v2026.03.28.3/edges-2026.03.28.3-aarch64.tar.gz"
-    sha256 "117bcdfc2a497d44009817fc28c748c47da40d75426bac8cca2a9521401663d4"
+    url "https://github.com/pablopunk/edges/releases/download/v2026.03.28.4/edges-2026.03.28.4-aarch64.tar.gz"
+    sha256 "df843f799a7f6709b8dd0def4e398f7636690ce364ea4538f1413546b8c738b7"
   end
 
   on_intel do
-    url "https://github.com/pablopunk/edges/releases/download/v2026.03.28.3/edges-2026.03.28.3-x86_64.tar.gz"
-    sha256 "f82a28ae783af1594cc16fbf3b254f89576aefe137989ea7854a79dcb2b2fd74"
+    url "https://github.com/pablopunk/edges/releases/download/v2026.03.28.4/edges-2026.03.28.4-x86_64.tar.gz"
+    sha256 "99ea4200671af680b5116d050e132eb1b026d44a16afab3523887df3469f9c72"
   end
 
   depends_on :macos
