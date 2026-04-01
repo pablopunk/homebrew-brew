@@ -1,6 +1,6 @@
 cask "mousetrap" do
-  version "0.1.3"
-  sha256 "7c17d9f330147a6a42f627565029b16f5d818c7686a5e0e91589ddf14b9c1863"
+  version "0.1.4"
+  sha256 "346425654f274cb7903535747badc0c634e4a4e0e5191df6c0a59b269492423d"
 
   url "https://github.com/pablopunk/mousetrap/releases/download/v#{version}/Mousetrap.zip"
   name "Mousetrap"
