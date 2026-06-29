@@ -1,6 +1,6 @@
 cask "aerospace" do
-  version "0.20.3-pablo.4"
-  sha256 "f85a54ffc30f57e001ffaa9585e7c42c16d2c0a7f8763df065a0e9a7aa6ddb96"
+  version "0.20.3-pablo.5"
+  sha256 "0acac248787a831bf24bebe53e4048c2037a89663390271327f7fceafdca50b2"
 
   url "https://github.com/pablopunk/AeroSpace/releases/download/v#{version}/AeroSpace-v#{version}.zip"
   name "AeroSpace"
