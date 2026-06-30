@@ -7,7 +7,7 @@ cask "aerospace" do
   desc "An i3-like tiling window manager for macOS"
   homepage "https://github.com/pablopunk/AeroSpace"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura # macOS 13+
 
   app "AeroSpace-v#{version}/AeroSpace.app"
   binary "AeroSpace-v#{version}/bin/aerospace"
