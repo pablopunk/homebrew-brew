@@ -1,28 +1,28 @@
 class Dot < Formula
   desc "Manage your dotfiles and their dependencies automagically"
   homepage "https://github.com/pablopunk/dot"
-  version "4.1.0"
+  version "4.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/pablopunk/dot/releases/download/v#{version}/dot-darwin-x64"
-      sha256 "474f5b74f5e1568143b17e7f82181695001ab9d6c6bde63c15726d77ad9b3cee"
+      sha256 "282f081cec369b5da1598d1686bf14d6c7196d10a235609f7b5ab2487339f3fb"
     end
     if Hardware::CPU.arm?
       url "https://github.com/pablopunk/dot/releases/download/v#{version}/dot-darwin-arm64"
-      sha256 "2f76cb5cbf72d465e562b86ff4e209591e4ae7ec9b2020009c936a2ac76818bc"
+      sha256 "f1a8f0805b917d7659e91633e457c6bbdab010e56a64d60f8a88c7e7286fd98b"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/pablopunk/dot/releases/download/v#{version}/dot-linux-x64"
-      sha256 "d424807e518ec23117f8db0c3c30cd8827b2dfb8cc0c1f9af11e789899e87473"
+      sha256 "757427923b184c53dddd4a42b9eacb69a9669dd4879a61411311b551eddb54a7"
     end
     if Hardware::CPU.arm?
       url "https://github.com/pablopunk/dot/releases/download/v#{version}/dot-linux-arm64"
-      sha256 "0a7a914c559a7b3d77434a150bdcd9ad4222a95172233394fbb513d34d7061ba"
+      sha256 "c4acd11ede26a5ff0aa57e2a19f115fb4ab2e536ef855ff0baeb2e119a875b28"
     end
   end
 
